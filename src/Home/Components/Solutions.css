@@ -1,0 +1,80 @@
+.solution-main{
+  background-color:#101218;
+  width: 100%;
+    height: auto;
+    color: white;
+    text-align: start;
+    overflow: hidden;
+    font-family: "Archivo", sans-serif;
+
+}
+
+
+.solution-main p{
+    color: rgba(255, 255, 255, var(--tw-text-opacity));
+    font-size: 16px;
+
+
+}
+
+.solution-main h3{
+    font-weight: 300;
+    padding: 60px;
+
+}
+
+
+.bold-text2::after {
+    content: "";
+    position: absolute;
+    left: -125px;
+    bottom: -20px;
+    width: 20%; /* Set the width of the border */
+    height: 4px; /* Adjust the height to control the thickness of the border */
+    background-image: linear-gradient(to right, red 50%, transparent 50%); /* Linear gradient for the border */
+    background-repeat: no-repeat;
+    /* Ensure the gradient doesn't repeat */
+}
+
+@media only screen and (max-width: 950px) {
+    .bold-text2::after {
+        left: -105px;
+    }
+  }
+
+.bold-text2 {
+    font-weight: 600;
+    /* padding-top: 5px; */
+    position: relative; /* Ensure relative positioning for the pseudo-element */
+}
+
+
+.solution-items{
+    padding: 60px;
+}
+
+.r-solution-items{
+    padding: 30px;
+}
+
+
+@media only screen and (max-width: 950px) {
+    .solution-items {
+      display: none !important;
+    }
+  }
+
+  @media only screen and (min-width: 950px) {
+    .r-solution-items {
+      display: none !important;
+    }
+  }
+
+  .know-p{
+  color: rgba(239, 68, 68) !important;
+  cursor: pointer;
+}
+
+.know-p:hover {
+  color: white !important;
+}

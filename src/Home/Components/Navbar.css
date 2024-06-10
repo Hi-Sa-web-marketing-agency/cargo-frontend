@@ -1,0 +1,265 @@
+
+.Top{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.navbar {
+  width: 100%;
+  height: 75px;
+  background-color: white;
+  opacity: 90;
+  
+}
+
+
+.navbar img{
+width: 20%;
+margin-left: 30px;
+margin-top: -7px;
+}
+
+@media only screen and (max-width: 950px) {
+    .navbar img {
+        width: 28% !important;
+      }
+    .navbar{
+        height: 70px;
+    }
+    .navbar img{
+      width: 18% !important;
+      margin-left: 30px;
+      margin-top: -7px;
+      }
+
+  }
+
+  @media only screen and (max-width: 1140px) {
+  
+    .navbar img{
+      width: 20% !important;
+      margin-left: 30px;
+      margin-top: -7px;
+      }
+
+  }
+
+  .nav-items-bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 999; /* Ensure it's on top of other content */
+    text-align: start;
+    border-radius: 10px;
+
+  }
+  .nav-items-bottom p {
+  margin-left: 10px;
+  padding: 10px;
+  
+    
+  }
+
+  .close-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  .nav-items-bottom button {
+    background-color: black;
+    width: 90%;
+    color: white;
+      
+    }
+
+    .nav-items-bottom button:hover {
+      /* text-decoration: none; */
+        
+      }
+  
+  
+
+
+
+  /* Navbar.css */
+
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px; */
+ 
+
+  .navbar img{
+    width: 10.5%;
+    margin-left: 30px;
+    margin-top: -7px;
+    }
+  
+  .nav-items {
+    list-style-type: none;
+    margin: 0;
+    padding: 10;
+    display: flex;
+  }
+  
+  .nav-items p {
+    margin-right: 60px;
+    text-decoration: none;
+    /* color: rgba(255, 255, 255, var(--tw-text-opacity)) !important; */
+    color: black;
+    font-family: "Archivo", sans-serif;
+    font-size: 16px;
+    margin-top: 15px;
+  }
+
+  .nav-items p:hover {
+   cursor: pointer;
+   position: relative;  }
+  
+  .nav-items p:last-child {
+    text-decoration: none;
+    /* color: rgba(255, 255, 255, var(--tw-text-opacity)); */
+  }
+
+  .nav-items p::after {
+    content: '';
+   
+    /* background-color: transparent; */
+  }
+
+  .nav-items p:hover::after {
+    background-color: red; /* Change to red on hover */
+     position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 50%;
+    height: 2px; 
+  }
+
+  .nav-main{
+  position: sticky;
+  top: 0;
+  background-color: #ffffff; /* Set your desired background color */
+  z-index: 1000; /* Ensure the navbar appears above other content */
+  /* Add other styling properties as needed */    
+  }
+  /* Hide menu-toggle for smaller screens */
+ /* Hide menu-toggle for screens larger than 1150px */
+@media only screen and (min-width: 1151px) {
+  .menu-toggle {
+    display: none !important;
+  }
+}
+
+/* Hide nav-items for screens smaller than 1150px */
+@media only screen and (max-width: 1150px) {
+  .nav-items {
+    display: none !important;
+  }
+  .navbar img {
+    width: 15% !important;
+  }
+}
+
+
+
+
+
+
+      
+  
+    .nav-items.open {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      /* background-color: #fff; */
+      width: 100%;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-items.open p {
+      padding: 5px;
+    }
+
+
+  .tool-items{
+    margin-right: 5px;
+    font-family: "Archivo", sans-serif;
+    margin-top: 10px;
+    width: 100%;
+   padding: 10;
+   height: 30px;
+  }
+  
+
+  .tool-items:hover{
+  cursor: pointer;
+  background-color: rgb(222, 219, 219);
+  width: 100%;
+  
+
+  }
+
+  .flash-news-container {
+    overflow: hidden;
+  }
+  
+  .flash-news {
+    display: flex;
+    animation: scroll 15s linear infinite; /* Adjust animation duration as needed */
+  }
+  
+  .news-item {
+    white-space: nowrap; /* Prevent wrapping of news items */
+    margin-right: 20px; /* Adjust spacing between news items */
+    font-family: "Archivo", sans-serif;
+    margin-top: 10px;
+
+
+  }
+  
+
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(-20%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .bold-news {
+    font-weight: bold;
+    color: rgba(242, 91, 20, 1); /* Default color */
+    font-size: 1.5em;
+  }
+  
+  
+  .dot {
+    color: rgba(242, 91, 20, 1); /* Default color */
+    font-size: 1em; /* Default size */
+  }
+  
+  .red-dot {
+    color: rgba(242, 91, 20, 1); /* Red color */
+    font-size: 1em; /* Default size */
+    
+  }
+  
+
+
+  .carousel-div{
+    width: 100%;
+    height: 50px;
+    background-color:#101218;
+    border-bottom: 2px solid rgba(242, 91, 20, 1);
+    color: white;
+  }
+
+ 

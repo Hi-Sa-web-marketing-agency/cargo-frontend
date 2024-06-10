@@ -1,0 +1,150 @@
+.cards-main{
+    height: auto;
+    width: 100%;
+   
+}
+.cards-div{
+    padding: 50px;
+    text-align: start;
+    margin-top: 40px;
+    padding-right: 90px;
+}
+.service-link{
+    margin-top: 10px;
+}
+
+
+
+.bold-text3::after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    bottom: -80px;
+    width: 88%; /* Set the width of the border */
+    height: 4px; /* Adjust the height to control the thickness of the border */
+    background-image: linear-gradient(to right, red 50%, transparent 50%); /* Linear gradient for the border */
+    background-repeat: no-repeat;
+    /* Ensure the gradient doesn't repeat */
+}
+
+@media only screen and (max-width: 950px) {
+    .bold-text3::after {
+        left: -105px;
+    }
+  }
+
+.bold-text3 {
+    font-weight: 700;
+    /* padding-top: 5px; */
+    position: relative; /* Ensure relative positioning for the pseudo-element */
+}
+
+.card{
+    height: 450px;
+    width: 98%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 20px;
+}
+
+.card img{
+    width: 96%;
+    margin-left: 8px;
+    margin-top: 5px;
+
+}
+
+.card p{
+    padding: 20px;
+    color: rgb(82, 91, 122);
+    font-family: "Archivo", sans-serif;
+    cursor: pointer;
+}
+
+.more-p{
+    padding: -10px;
+    margin-top: -50px;
+}
+
+.more-p:hover{
+    color: rgba(239, 68, 68) !important;
+    cursor: pointer;
+}
+
+.none{
+    color: white;
+}
+
+.experience-div{
+    width: 100%;
+    height: auto;
+    background-color:#101218;
+    color: rgba(255, 255, 255);
+    font-family: "Archivo", sans-serif;
+    padding: 30px;
+
+}
+.experience-div h4{
+    color: white;
+    font-weight: 400;
+    font-size: 30px;
+    font-family: "Archivo", sans-serif;
+    text-align: center;
+    padding: 10px;
+
+}
+.experience-div p{
+    text-align: center;
+    padding: 10px;
+}
+
+.bold-text4{
+    font-weight: 600;
+}
+
+.personal{
+    width: 230px;
+    height: 40px;
+    background-color: white;
+    /* margin-left: 33%; */
+    border-radius: 4px;
+    
+}
+
+.business{
+    width: 230px;
+    height: 40px;
+    background-color: white;
+    /* margin-left: 2%; */
+    border-radius: 4px;
+
+}
+
+@media only screen and (max-width: 1050px) {
+    .personal {
+        width: 150px;
+
+
+    }
+
+    .business {
+        width: 150px;
+
+
+    }
+  }
+
+  @media only screen and (max-width: 950px) {
+    .none {
+       display: none;
+
+    }
+    .service-link{
+        margin-top: 30px !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .bg-image {
+        height: 1400px !important;
+    }
+}

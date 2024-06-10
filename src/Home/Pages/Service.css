@@ -1,0 +1,227 @@
+.service-main img{
+    width: 100%;
+    height: 380px;
+    /* display: block; */
+    top: 0;
+}
+
+.service-main {
+    position: relative;
+    overflow: hidden;
+    font-family: "Archivo", sans-serif;
+
+  }
+
+  .service-banner-container {
+    /* The image used */
+  
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  
+  
+  .service-banner {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .service-text {
+    position: absolute;
+    top: 60px;
+    left: 14%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: "Archivo", sans-serif;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideFromBottom 3s forwards;
+
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .service-text h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  .service2 h5{
+    color: rgba(242, 91, 20, 1);
+    font-weight: 600;
+    margin-top: 60px;
+  }
+
+  .service2 h4{
+    margin-top: 50px;
+    text-align: start;
+    margin-left: 20px;
+  }
+
+  .service2 {
+   padding-left: 120px;
+   padding-right: 120px;
+  }
+
+  .service-list{
+    width: 90%;
+    height: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    margin-top: 50px;
+   
+  }
+
+
+  .service-list p{
+    color: black;
+    font-weight: 600;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    padding:19px;
+    text-align: start;
+
+   
+  }
+
+  @media only screen and (max-width: 900px) and (min-width: 360px) {
+
+    .service2 {
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+       .service-list{
+        width: 98%;
+        
+       
+      }
+      .service3 h5{
+        margin-top:-100px !important ;
+       
+      }
+      .service-cards{
+        height: 540px !important;
+      
+    
+      }
+
+
+}
+
+
+
+  @media only screen and (max-width: 950px) and (min-width: 400px) {
+    .service2 {
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+       .service-list{
+        width: 98%;
+        
+       
+      }
+      .service3 h5{
+        margin-top:-100px !important ;
+       
+      }
+      .service-cards{
+        height: 520px !important;
+      
+    
+      }
+
+   
+  }
+  
+  @media only screen and (min-width: 700px) and (max-width: 1366px) {
+    .service2 {
+        padding-left: 20px;
+        padding-right: 20px;
+       }
+       .service-list{
+        width: 98%;
+        
+       
+      }
+      .service3 h5{
+        margin-top:-60px !important ;
+       
+      }
+      .service-cards{
+        height: 750px !important;
+      
+    
+      }
+}
+
+  .service3{
+    height: auto;
+    width: 100%;
+    /* padding: 80px; */
+    background-color:#f2f3f8;
+    margin-top: 80px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-bottom: 40px;
+  }
+  .service-cards{
+    height: 450px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;   
+    background-color: white;
+    border-radius: 7px;
+    margin-top: 120px;
+    padding-bottom: 30px;
+    position: relative;
+
+
+  }
+  .service-cards p{
+    margin-top: 60px;
+    padding: 15px;
+    font-size: 15px;
+  }
+
+  .service-cards::before {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px; /* Adjust the size of the dot */
+    height: 50px; /* Adjust the size of the dot */
+    background-color: rgba(242, 91, 20, 1);
+    border-radius: 2%; /* Make it a circle */
+  }
+  .service3 h5{
+    color: #000080;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .service3 h5::after {
+    content: '';
+    position: absolute;
+    left: 37.5%;
+    width: 50%; /* Adjust the width to control the length of the border */
+    height: 3px;
+    top: 90px;
+    background-image: linear-gradient(to right, rgba(242, 91, 20, 1) 50%, transparent 50%);
+}

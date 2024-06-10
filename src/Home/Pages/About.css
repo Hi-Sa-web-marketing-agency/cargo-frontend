@@ -1,0 +1,487 @@
+/* .About-main{
+    width: 100%;
+    height: auto;
+}
+.About-main img{
+    width: 100%;
+    height: 420px;
+    display: block;
+    top: 0;
+} */
+
+.About-main img{
+    width: 100%;
+    height: 380px;
+    /* display: block; */
+    top: 0;
+}
+
+.About-main {
+    position: relative;
+    overflow: hidden;
+  }
+
+  
+  
+  .about-banner {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .about-text {
+    position: absolute;
+    top: 60px;
+    left: 14%;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: "Archivo", sans-serif;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideFromBottom 3s forwards;
+
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .about-text h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+  
+  /* .about-text p {
+    font-size: 18px;
+    line-height: 1.5;
+  } */
+
+  .about-2{
+    height: auto;
+    margin-top: 80px;
+    font-family: "Archivo", sans-serif;
+    padding-bottom: 20px;
+
+  }
+
+  .text-part p {
+    font-size: 22px;
+    color: rgba(242, 91, 20, 1);
+    font-weight: bold;
+    position: relative;
+    left: -38%; /* Adjust position relative to parent container */
+  }
+  
+  .text-part h2 {
+    font-size: 25px; /* Adjust font size relative to viewport width */
+    color: black;
+    position: relative;
+    text-align: start;
+    left: 6%; /* Adjust position relative to parent container */
+    font-weight: bold;
+    margin-top: -3vw; /* Adjust margin relative to viewport width */
+  }
+  
+  .text-part h4 {
+    font-size: 18px;
+    color: #636161;
+    position: relative;
+    text-align: start;
+    left: 9%; 
+    line-height: 1.5em; 
+    font-weight: bold;
+  }
+  
+  .text-part h3 {
+    font-size: 18px; 
+    color: rgb(145, 143, 143);
+    position: relative;
+    text-align: start;
+    left: 6%; 
+    line-height: 1.5em; 
+  }
+  
+  .text-part h4::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1.5vw; 
+    width: 0.3vw; 
+    height: 100%;
+    background-color: rgba(242, 91, 20, 1);
+  }
+  
+
+  
+
+  .span{
+    color:rgba(242, 91, 20, 1) ;
+  }
+
+  @media only screen and (max-width: 900px) and (min-width: 360px) {
+
+
+    .text-part h3{
+     font-size: 12px !important;
+     padding: 10px;
+
+  
+    }
+
+    .text-part h2{
+     font-size: 20px;
+     margin-top: -50px; 
+
+ 
+  
+    }
+
+    .text-part h4{
+     font-size: 12px;
+    
+ 
+  
+    }
+
+    .text-part p {
+     font-size: 16px;
+    
+   }
+   .image-part {
+    width: 90% !important;
+    padding-top: 20px !important;
+
+  }
+  .image-part img{
+    height: 200px !important;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideFromBottom 3s forwards;
+   
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+
+  .image-part2 img{
+    width: 50%;
+    height: 150px !important;
+  }
+  .about4-textpart{
+   
+    padding-left: 15px !important;
+    margin-top: 10px;
+ 
+
+  }
+  .about4-imgpart{
+    margin-top: 80px;
+    padding-top: 5px !important;
+    padding-right: 5px !important;
+  }
+
+  .about4-imgpart img{
+    width: 100% !important;
+    height: 400px;
+    margin-top: 20px !important;
+  }
+  .about-text {
+    position: absolute;
+    top: 80px !important;
+    left: 10%;
+ 
+
+  }
+  .about-text h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+   
+
+}
+
+
+
+  @media only screen and (max-width: 950px) and (min-width: 400px) {
+
+
+       .text-part h3{
+        font-size: 12px !important;
+
+     
+       }
+
+       .text-part h2{
+        font-size: 20px;
+        margin-top: -50px; 
+
+    
+     
+       }
+
+       .text-part h4{
+        font-size: 14px;
+       
+    
+     
+       }
+
+       .text-part p {
+        font-size: 16px;
+       
+      }
+      .image-part {
+        width: 90% !important;
+        padding-top: 20px !important;
+
+      }
+      .image-part img{
+        height: 200px !important;
+       
+      }
+    
+      .image-part2 img{
+        width: 50%;
+        height: 150px !important;
+      }
+      .about4-textpart{
+   
+        padding-left: 15px !important;
+        margin-top: 10px;
+     
+    
+      }
+      .about4-imgpart{
+        margin-top: 80px;
+        padding-top: 5px !important;
+        padding-right: 5px !important;
+      }
+    
+      .about4-imgpart img{
+        width: 100% !important;
+        height: 400px;
+        margin-top: 20px !important;
+      }
+      .about-text {
+        position: absolute;
+        top: 80px !important;
+        left: 10%;
+     
+    
+      }
+      .about-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+   
+  }
+  
+  @media only screen and (min-width: 700px) and (max-width: 1366px) {
+
+    .signup {
+        width: 80%;
+        height: 700px;
+        margin-left: 60px; /* Adjust as needed */
+    }
+    .Logo2{
+        width: 30%;
+        margin-top: 50px;
+        margin-left: 270px;
+    }
+
+    .text-part h3{
+        font-size: 16px;
+        
+       }
+
+       .text-part h2{
+        font-size: 25px;
+       
+
+       }
+
+       .text-part h4{
+        font-size: 14px;
+        ;
+    
+     
+       }
+       .image-part {
+        width: 90% !important;
+      }
+      .image-part img{
+        height: 220px !important;
+        padding-left: 7px;
+        padding-right: 7px;
+      }
+
+      .image-part2 img{
+        width: 50%;
+        height: 150px !important;
+      }
+      .about4-textpart{
+   
+        padding-left: 15px !important;
+        margin-top: 10px;
+     
+    
+      }
+      .about4-imgpart{
+        margin-top: 80px;
+        padding-top: 5px !important;
+        padding-right: 5px !important;
+      }
+    
+      .about4-imgpart img{
+        width: 100% !important;
+        height: 400px;
+        margin-top: 120px !important;
+      }
+      .about-text {
+        position: absolute;
+        top: 80px !important;
+        left: 10%;
+     
+    
+      }
+      .about-text h2 {
+        font-size: 36px;
+        margin-bottom: 10px;
+      }
+}
+
+  .image-part {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    width: 75%;
+    height: auto; 
+    padding-left: 15px;
+    padding-top: 5px;
+  }
+  .image-part img{
+    height: 280px;
+    padding-left: 7px;
+    padding-right: 7px;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideFromBottom 3s forwards;
+    
+  }
+
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .image-part2 {
+    display: flex; /* Use flexbox for the second row */
+    justify-content: space-between; /* Distribute items evenly along the row */
+    width: 100%; /* Occupy full width */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  .image-part2 img{
+    width: 50%;
+    padding: 7px;
+    height: 240px;
+  }
+
+
+
+  .about3{
+    width: 100%;
+    height:auto;
+    background-color: black;
+    color: white;
+    font-family: "Archivo", sans-serif;
+
+  }
+  .about3 p {
+   padding-top: 120px;
+   text-align: center;
+  }
+  .about3 h4{
+    text-align: center;
+  }
+  .about3-para{
+    font-size: 17px;
+    padding: 20px;
+  }
+  .about3 img{
+    height: 50px;
+    width: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-top: 20px;
+  }
+
+  .about4{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+
+    /* border-bottom: 1px solid rgba(83, 82, 82, 0.502); */
+
+  }
+  .about4-textpart{
+    width: 100%;
+    height: auto;
+    text-align: start;
+    padding-left: 120px;
+    margin-top: 90px;
+    font-family: "Archivo", sans-serif;
+
+  }
+  .about4-textpart h4{
+    color: black;
+    font-size: 25px;
+    /* margin-left: -160px; */
+  }
+  
+  .about4-container {
+    display: flex;
+    align-items: center; /* Vertically center the image and text */
+  }
+  .about4-container p{
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    font-family: "Archivo", sans-serif;
+
+  }
+
+  .about4-imgpart{
+    margin-top: 80px;
+    padding-top: 10px;
+    padding-right: 30px;
+  }
+
+
+
+  .about4-imgpart img{
+    width: 90%;
+    height: 400px;
+    margin-top: 40px;
+  }
+  
+  

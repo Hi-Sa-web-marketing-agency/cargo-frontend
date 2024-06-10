@@ -1,0 +1,136 @@
+.Logo2{
+    width: 10%;
+    margin-left: 130px;
+    margin-top: 50px;
+    display: block;
+    cursor: pointer;
+}
+
+.back-card {
+    width: 60%;
+    height: 700px;
+    background-color: rgb(246, 237, 226);
+    margin-top: 190px;
+    border-radius: 18px;
+    position: relative; /* Added */
+    /* overflow: hidden;  */
+}
+
+@media screen and (min-width: 768px) {
+    .back-card {
+        margin: 0 auto; /* Apply margin only for screens wider than 768px */
+    }
+}
+
+.back-card img {
+    height: 87%;
+    margin-bottom:0;
+    position: absolute; /* Added */
+    bottom: 0; /* Added */
+    left: 75%; /* Adjust as needed */
+}
+
+.signup {
+    width: 40%;
+    height: 900px;
+    position: absolute; /* Added */
+    margin-top: -50px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    margin-left: 50px; /* Adjust as needed */
+}
+.signup h4{
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.switch-checkbox {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+   
+  }
+  
+  .switch-label {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 90px;
+    height: 35px;
+    background: rgb(246, 237, 226);
+    border-radius: 130px;
+    position: relative;
+    transition: background-color .2s;
+    position: absolute;
+    top: 5%;
+    left: 35%;
+  }
+  
+  .switch-label .switch-button {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 45px;
+    height: 30px;
+    border-radius: 65px;
+    transition: 0.2s;
+    background: #fff;
+    box-shadow: 0 0 2px 0 rgba(10, 10, 10, 0.29);
+  }
+  
+  .switch-checkbox:checked + .switch-label .switch-button {
+    left: calc(100% - 2px);
+    transform: translateX(-100%);
+  }
+  
+  .switch-label:active .switch-button {
+    width: 40px;
+  }
+
+
+@media only screen and (max-width: 950px) and (min-width: 200px) {
+    .back-card  {
+        width: 100%;
+        height: 600px;
+        margin-top: 100px;
+
+
+    }
+    .signup {
+        width: 90%;
+        height: 700px;
+        margin-left: 20px; /* Adjust as needed */
+    }
+    .back-card img {
+       display: none;
+    }
+    .Logo2{
+        width: 40%;
+        margin-top: 50px;
+    }
+   
+  }
+  
+  @media only screen and (min-width: 700px) and (max-width: 1024px) {
+    .back-card  {
+        width: 80%;
+        height: 600px;
+
+    }
+    .signup {
+        width: 80%;
+        height: 700px;
+        margin-left: 60px; /* Adjust as needed */
+    }
+    .Logo2{
+        width: 30%;
+        margin-top: 50px;
+        margin-left: 270px;
+
+    }
+   
+  }
+  

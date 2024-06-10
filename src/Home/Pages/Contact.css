@@ -1,0 +1,171 @@
+.Contact-main img{
+    width: 100%;
+    height: 380px;
+    /* display: block; */
+    top: 0;
+}
+
+.Contact-main {
+    position: relative;
+    overflow: hidden;
+    font-family: "Archivo", sans-serif;
+
+  }
+
+  .contact-banner-container {
+    background-image: url("../Pages/imgs/contact-banner.jpg");
+  
+    min-height: 450px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  
+  
+  .contact-banner {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .contact-text {
+    position: absolute;
+    top: 60px;
+    left: 14%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: "Archivo", sans-serif;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideFromBottom 3s forwards;
+
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .contact2{
+    margin-top: 40px;
+    padding: 60px;
+  }
+  .contact2 h4{
+    color: rgba(242, 91, 20, 1)
+  }
+
+  .details {
+    position: relative; /* Ensure that pseudo-element is positioned relative to this div */
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 30px;
+    background-image: url('../Pages/imgs/contact2-img.webp');
+    background-size: cover;
+  }
+  
+  .details::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%; /* Use percentage height to match parent div's height */
+    width: 100%; /* Use percentage width to match parent div's width */
+    background-color: rgba(2, 10, 29, 0.9);
+        border-radius: 10px; /* Ensure border-radius matches parent div */
+  }
+
+  .details h4,.details h5,.details h6,
+.details p,
+.sub-details {
+  position: relative;
+  z-index: 1; /* Ensure text content is above the shadow */
+}
+
+  .details h4{
+    color: rgba(242, 91, 20, 1);
+    margin: auto 0;  
+    padding: 40px;
+
+  }
+  .sub-details h5{
+    color: white;
+    font-size: 20px;
+    padding-top: 3px;
+    padding-right: 80px;
+  }
+  .details h6{
+    color: white;
+    font-size: small;
+    padding-top: 3px;
+    text-align: start;
+  }
+  .details p{
+    color: white;
+    padding: 30px;
+  }
+
+  .small{
+    font-size: small;
+    text-align: start;
+    padding: 20px;
+    
+  }
+
+  .sub-details {
+    /* margin-top: -60px; */
+    text-align: start;
+    padding-left: 30px;
+    margin-left: 20px;
+  }
+  .sub-details p{
+    margin-top: -50px ;
+  }
+
+  .form-div{
+    margin-top: 20px;
+  }
+
+  .contact3{
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative; /* Ensure that pseudo-element is positioned relative to this div */
+    background-color: rgba(187, 187, 189, 0.9);
+
+  }
+
+
+  /* .contact3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px ;
+    width: 100%; 
+    background-color: rgba(104, 104, 106, 0.9);
+  } */
+
+
+  .icons{
+    padding: 40px;
+    margin-left: 80px;
+
+  }
+
+  @media only screen and (max-width:950px){
+    .icons{
+      margin-left: 100px !important;
+    }
+  }
+

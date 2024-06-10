@@ -1,0 +1,266 @@
+.Branch-main img{
+    width: 100%;
+    height: 380px;
+    /* display: block; */
+    top: 0;
+}
+
+.Branch-main {
+    position: relative;
+    overflow: hidden;
+    font-family: "Archivo", sans-serif;
+
+  }
+
+  .Branch-banner-container {
+    background-image: url("../Pages/imgs/Branch-banner.jpg");
+  
+    min-height: 450px; 
+  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  
+  
+  .Branch-banner {
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .Branch-text {
+    position: absolute;
+    top: 60px;
+    left: 14%;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-family: "Archivo", sans-serif;
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideFromBottom 3s forwards;
+
+  }
+  @keyframes slideFromBottom {
+    0% {
+      opacity: 0;
+      transform: translateY(50%);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0%);
+    }
+  }
+  
+  .Branch-text h2 {
+    font-size: 46px;
+    margin-bottom: 10px;
+  }
+
+  .branch2{
+    width: 100%;
+    height: auto;
+    padding: 70px;
+  }
+  .branch2-img1::after {
+    content: '';
+    position: absolute;
+    top: 180px;
+    transform: translateX(-50%);
+    width: 60px; /* Adjust the size of the dot */
+    height: 30px; /* Adjust the size of the dot */
+    background-color: rgba(242, 91, 20, 1);
+    border-radius: 2%; /* Make it a circle */
+    margin-left: 10px;
+  }
+
+  .branch2-img1{
+    height: 400px;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 20px;
+    position: relative;
+  }
+
+  .branch2-img2{
+    height: 400px;
+    width: 40%;
+    margin-top: 30px;
+    margin-left: 20px;
+
+  }
+  .branch2-text{
+    text-align: start;
+    margin-top: 20px;
+  }
+
+  .branch2-card{
+    margin-top: 70px;
+  }
+  .branch2-card img{
+    border-radius: 10px;
+    margin-top: -80px;
+    height: 100%;
+  }
+  .branch2-card p{
+    text-align: start;
+    font-family: "Archivo", sans-serif;
+    font-size: 14px;
+    line-height: 30px;
+    margin-top: -20px;
+
+    
+  }
+  .branches-list{
+    height: 500px;
+    width: 95%;
+    padding: 5px;
+    margin-top: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    border-radius: 10px;
+    text-align: start;
+    font-family: "Archivo", sans-serif;
+  }
+
+  .branches-list p{
+    font-size: 14px;
+    line-height: 30px;
+  }
+  .branches h4{
+    margin-top: 20px;
+  }
+  .branches{
+    padding: 50px;
+  }
+
+  .branches p{
+  padding: 15px;
+  }
+
+  @media only screen and (max-width: 900px) and (min-width: 360px){
+    .Branch-main img{
+      height: 180px !important;
+    }
+    .Branch-text h2 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+  
+    .branch2{
+      width: 100%;
+      height: auto;
+      padding: 70px;
+    }
+    .branch2-img1::after {
+   
+      top: 100px;
+      /* left: 51%; */
+
+    }
+    .branch2-card p{
+   
+      margin-top: 20px !important;
+    }
+  
+    .branch2-img1{
+      width: 100% !important;
+      margin-left: 10px;
+
+
+    }
+  
+    .branch2-img2{
+      width: 100% !important;
+      margin-left: 10px;
+
+  
+  
+    }
+
+    .branch2{
+    
+      padding: 30px !important;
+    }
+    .branches{
+      padding: 10px !important;
+    }
+    .branches{
+      margin-left: 15px !important;
+    }
+  }
+
+  
+  @media only screen and (min-width: 700px) and (max-width: 1366px) {
+    .Branch-main img{
+      height: 260px !important;
+    }
+    .Branch-text h2 {
+      font-size: 46px;
+      margin-bottom: 10px;
+    }
+  
+    .branch2{
+      width: 100%;
+      height: auto;
+      padding: 70px;
+    }
+    .branch2-img1::after {
+   
+      top: 150px;
+
+    }
+  
+    .branch2-img1{
+      width: 100% !important;
+      margin-left: 10px;
+
+
+    }
+  
+    .branch2-img2{
+      width: 100% !important;
+      margin-left: 10px;
+
+  
+  
+    }
+
+    .branch2{
+    
+      padding: 30px !important;
+    }
+    .branches-list{
+      width: 100% !important;
+      /* padding: 7px !important; */
+      margin-top: 50px;
+     
+    }
+
+    .branches-list p{
+      font-size: 14px;
+      line-height: 25px;
+    }
+
+    .branches{
+      padding-right: 25px !important;
+    }
+    .branch2-card p{
+   
+      margin-top: 20px !important;
+      font-size: 20px;
+    }
+
+ 
+  }
+
+
+
+
+  /* @media only screen and  (min-width: 1360px) {
+    .branches-tab{
+      display: none;
+    }
+  } */
